@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- lang="es": Define el idioma principal del documento como español -->
+<html lang="es">
+<head>
+    <!-- <meta charset="UTF-8">: Permite la visualización de tildes, eñes y caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport">: Ajusta la escala y dimensiones para dispositivos móviles (Responsive Web Design) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="author">: Metadato que indica el autor del documento -->
+    <meta name="author" content="Néstor Joseph Martínez Cruz">
+    <!-- <meta name="description">: Resumen del contenido para motores de búsqueda (SEO) -->
+    <meta name="description" content="Ejercicio práctico #1: Elaborar una página en lenguaje HTML, CSS y/o Bootstrap.">
+    
+    <!-- <title>: Título en la pestaña del navegador -->
+    <title>Néstor Joseph Martínez Cruz</title>
+    
+    <!-- <link rel="preconnect">: Optimiza la conexión anticipada hacia el servidor de fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet">: Importa las familias tipográficas Sora e Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- <link rel="stylesheet">: Vincula la hoja de estilos externa estilos.css -->
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+    <!-- <header>: Encabezado principal tipo Hero con elementos visuales decorativos -->
+    <header class="hero">
+        <div class="forma forma-1"></div>
+        <div class="forma forma-2"></div>
+        <div class="hero-contenido">
+            <p class="eyebrow">Ingeniería en Sistemas · UMG</p>
+            <h1>Néstor Joseph Martínez Cruz</h1>
+            <p class="tagline">Estudiante de Ingeniería en Sistemas</p>
+        </div>
+    </header>
+
+    <!-- <main>: Contenedor semántico que agrupa las secciones principales de la página -->
+    <main>
+
+        <!-- ===== DATOS PERSONALES ===== -->
+        <!-- <section>: Agrupa temáticamente la información personal -->
+        <section class="tarjeta datos-personales">
+            <span class="numero-seccion">01</span>
+            <h2>Datos personales</h2>
+            <div class="datos-contenedor">
+                <!-- <img>: Fotografía con texto alternativo 'alt' -->
+                <img src="img/joseph-formal.jpg" alt="Fotografía de Néstor Joseph Martínez Cruz" class="foto-carnet">
+                <div class="datos-tabla">
+                    <p class="dato"><span class="etiqueta">Nombre:</span><span class="valor">Néstor Joseph Martínez Cruz</span></p>
+                    <p class="dato"><span class="etiqueta">Edad:</span><span class="valor">21 años</span></p>
+                    <!-- <a href="mailto:...">: Enlace que abre el cliente de correo predeterminado -->
+                    <p class="dato"><span class="etiqueta">Correo electrónico:</span><span class="valor"><a href="mailto:nmartinezc4@miumg.edu.gt">nmartinezc4@miumg.edu.gt</a></span></p>
+                    <p class="dato"><span class="etiqueta">Número de carnet:</span><span class="valor">5190-23-1853</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CURSOS Y CERTIFICACIONES ===== -->
+        <section class="tarjeta cursos">
+            <span class="numero-seccion">02</span>
+            <h2>Cursos y certificaciones</h2>
+            <h3 class="curso-nombre">Direccionamiento de red y solución de problemas básicos</h3>
+            <!-- <blockquote>: Representa una cita o bloque de descripción destacado -->
+            <blockquote class="curso-descripcion">
+                Curso introductorio de redes que cubre el direccionamiento IP y la
+                solución de problemas básicos de conectividad, cursado a través del
+                programa Cisco Networking Academy.
+            </blockquote>
+            <!-- target="_blank" abre en nueva pestaña, rel="noopener" mejora la seguridad y rendimiento -->
+            <p class="curso-enlace">
+                Proveedor: <a href="https://www.netacad.com/" target="_blank" rel="noopener">Cisco Networking Academy</a>
+            </p>
+        </section>
+
+
+        <section class="tarjeta biografia">
+            <span class="numero-seccion">03</span>
+            <h2>Biografía</h2>
+            <p>
+                <!-- <strong>: Énfasis con importancia semántica (negrita) -->
+                <strong>Nací en la Ciudad de Guatemala</strong> y desde los siete años estudié en el
+                Colegio Calíope, donde pasé toda mi etapa escolar, desde primero primaria hasta
+                quinto bachillerato. Fue un cambio significativo en su momento, ya que tuve que
+                aprender inglés e italiano desde cero, pero también fue ahí donde hice mis
+                amistades más duraderas y viví experiencias que marcaron quién soy hoy.
+            </p>
+            <p>
+                <!-- <em>: Énfasis de tono o expresión (cursiva) -->
+                <em>Uno de los recuerdos que más atesoro es un viaje familiar a Semuc Champey,
+                en Alta Verapaz, cuando tenía trece años</em>; después de horas de camino llegamos
+                a unas pozas de agua cristalina rodeadas de naturaleza, uno de los lugares más
+                hermosos que ha visto. A los dieciséis años viví la pandemia del coronavirus,
+                una etapa difícil que me tocó atravesar con clases virtuales y mucha incertidumbre,
+                pero de la que salí adelante gracias a la perseverancia.
+            </p>
+            <p>
+                <!-- <u>: Texto subrayado (enfatiza características) -->
+                <u>Me considero una persona amable, leal y perseverante</u>, para quien la familia
+                y los amigos son lo más importante. En 2022 me gradué de bachiller en Ciencias y
+                Letras con orientación en Computación, y actualmente curso el octavo semestre de
+                Ingeniería en Sistemas en la Universidad Mariano Gálvez. Fuera del código disfruto
+                el fútbol, la música, los videojuegos, el cine, el gimnasio y viajar.
+            </p>
+        </section>
+
+        <section class="tarjeta ejercicios">
+            <span class="numero-seccion">04</span>
+            <h2>Ejercicios realizados en clase</h2>
+            <p class="ejercicios-sub">Desarrollo web</p>
+            <!-- <nav>: Elemento semántico que agrupa enlaces de navegación -->
+            <nav class="dias">
+                <a href="../dia2/dia2.html"><span>Día 2</span></a>
+                <a href="../dia3/dia3.html"><span>Día 3</span></a>
+                <a href="../dia4/pagina.html"><span>Día 4</span></a>
+                <a href="../dia5/dia5.html"><span>Día 5</span></a>
+            </nav>
+        </section>
+
+    </main>
+
+</body>
+</html>

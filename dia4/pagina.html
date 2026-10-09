@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Codificación de caracteres estándar -->
+        <meta charset="UTF-8">
+        <title>NESTOR JOSEPH MARTINEZ CRUZ - Día 4</title>
+        
+        <!-- <link rel="stylesheet">: Enlaza una hoja de estilos CSS externa (estilos.css) al documento HTML -->
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <!-- Enlace para volver a la página principal -->
+        <p><a href="../paginapersonal/index.html" style="display:inline-block;padding:10px 18px;background:#0b1f3a;color:#ffffff;text-decoration:none;border-radius:6px;font-family:Arial,sans-serif;font-weight:bold;">&larr; Volver a la página principal</a></p>
+        
+        <!-- <header>: Encabezado semántico del documento o sección -->
+        <header>
+            <!-- <h1> dentro de <header>: Afectado por el selector de CSS "header > h1" -->
+            <h1>Muestra de CSS</h1>
+        </header>
+
+        <!-- <h1> directo en el body: NO afectado por el selector "header > h1" -->
+        <h1>Prueba</h1>
+
+        <!-- <article>: Contenedor semántico para contenido independiente y autónomo (artículos, posts, noticias) -->
+        <article>
+            <!-- <h2> dentro de <article>: Afectado por las reglas "article > h2", ::before y ::after de CSS -->
+            <h2>Historia de las hojas de estilos</h2>
+            <p>Las hojas de estilos aparecieron poco después que el lenguaje de
+            etiquetas SGML, alrededor del año 1970. Desde la creación de SGML, se observó la
+            necesidad de definir un mecanismo que permitiera aplicar de forma consistente
+            diferentes estilos a los documentos electrónicos.</p>
+        </article>
+
+        <!-- <h2> fuera de <article>: No recibe los pseudoelementos ::before ni ::after -->
+        <h2>Prueba</h2>
+
+        <!-- <footer>: Pie de página semántico -->
+        <footer>
+            2017: Programación WEB
+        </footer>
+        
+        <hr>
+        
+        <!-- id="p18" e id="p19": Identificadores únicos que permiten aplicar estilos CSS específicos mediante "#p18" y "#p19" -->
+        <p id="p18">Este texto está formateado usando el ID=18 (color azul en CSS).</p>
+        <p id="p19">Este otro párrafo formateado usando ID=19 (color verde en CSS).</p>
+    </body>
+</html>

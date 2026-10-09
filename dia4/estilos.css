@@ -1,0 +1,51 @@
+/* Selector de tipo (etiqueta): Aplica estilos a todo el cuerpo de la página */
+body {
+    background-color: #fbf8e5; /* Color de fondo beige claro */
+    color: #6e7d9e;            /* Color principal del texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia tipográfica con fuentes de respaldo */
+}
+
+/* Selector para el contenedor del encabezado */
+header {
+    background-color: #080607; /* Fondo oscuro */
+    color: #A5B7C5;            /* Color de texto claro */
+    padding: 10px 20px;        /* Espaciado interno: 10px arriba/abajo, 20px izquierda/derecha */
+}
+
+/* Selector de hijo directo (>): Aplica únicamente a los <h1> que sean hijos inmediatos de <header> */
+header > h1 {
+    letter-spacing: 5px;       /* Espaciado entre letras (tracking) */
+}
+
+/* Selector de hijo directo: Aplica a los <h2> que sean hijos inmediatos de <article> */
+article > h2 {
+    font-weight: bolder;       /* Grosor de la fuente más marcado (negrita fuerte) */
+}
+
+/* Pseudoelemento ::before: Inserta contenido decorativo ANTES del texto del <h2> dentro de <article> */
+article > h2::before {
+    content: "\002329";        /* Código unicode para el símbolo de corchete angular izquierdo 〈 */
+    color: #F9C989;            /* Color naranja pastel */
+}
+
+/* Pseudoelemento ::after: Inserta contenido decorativo DESPUÉS del texto del <h2> dentro de <article> */
+article > h2::after {
+    content: "\00232A";        /* Código unicode para el símbolo de corchete angular derecho 〉 */
+    color: #F9C989;            /* Color naranja pastel */
+}
+
+/* Selector para el pie de página */
+footer {
+    background-color: #A5B7C5; /* Color de fondo grisáceo */
+    padding: 5px 10px;         /* Espaciado interno */
+}
+
+/* Selector de ID (#): Selecciona el elemento único con id="p18" */
+#p18 { 
+    color: blue;               /* Color de texto azul */
+}
+
+/* Selector de ID (#): Selecciona el elemento único con id="p19" */
+#p19 { 
+    color: green;              /* Color de texto verde */
+}

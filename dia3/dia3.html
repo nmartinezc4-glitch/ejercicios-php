@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define la codificación de caracteres a UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Título de la pestaña del navegador -->
+    <title>NESTOR JOSEPH MARTINEZ CRUZ - Día 3</title>
+</head>
+<body>
+
+<!-- Enlace para retornar a la página principal -->
+<p><a href="../paginapersonal/index.html" style="display:inline-block;padding:10px 18px;background:#0b1f3a;color:#ffffff;text-decoration:none;border-radius:6px;font-family:Arial,sans-serif;font-weight:bold;">&larr; Volver a la página principal</a></p>
+
+<!-- <form>: Contenedor para recolectar datos ingresados por el usuario -->
+<form> 
+    <h1>NESTOR JOSEPH MARTINEZ CRUZ</h1>
+
+    <!-- <fieldset>: Agrupa visualmente un conjunto de campos y controles de formulario relacionados -->
+    <fieldset>
+        <!-- <legend>: Título descriptivo que se muestra en el borde superior del fieldset -->
+        <legend>Ingreso de datos personales</legend>
+        
+        <!-- <input type="text">: Campo para introducir una línea de texto plano -->
+        <!-- placeholder: Texto de sugerencia o guía que desaparece al escribir -->
+        Nombres: <input name="nombres" type="text" placeholder="Ingrese sus nombres"/> <br>
+        Apellidos: <input name="apellidos" type="text" placeholder="Ingrese sus apellidos"/><br>
+        
+        <!-- <input type="email">: Campo para correo electrónico; valida automáticamente que tenga formato de email (con @ y dominio) -->
+        <!-- required: Atributo que hace obligatorio llenar el campo antes de enviar el formulario -->
+        Email: <input name="emaildir" type="email" placeholder="Ingrese su correo electronico" required/><br>
+        
+        <!-- <input type="range">: Control deslizante (slider) entre un valor mínimo (min) y máximo (max) -->
+        <!-- disabled: Deshabilita el control para que el usuario no pueda modificarlo -->
+        Edad: <input type="range" name="edad" min="18" max="100" value="18" disabled/><br>
+    </fieldset>
+
+    <fieldset>
+        <!-- <textarea>: Campo de entrada de texto de múltiples líneas -->
+        <!-- rows: Número de filas visibles de alto | cols: Número de columnas visibles de ancho -->
+        <textarea rows="3" cols="30">
+Elemento que permite el ingreso de información en varias líneas.
+        </textarea>
+    </fieldset>
+
+    <fieldset>
+        <!-- <select>: Lista desplegable (dropdown) para seleccionar una opción -->
+        <select>
+            <!-- <option>: Cada una de las opciones dentro de la lista; value es el valor que se envía al servidor -->
+            <option value="HTML">Unidad HTML</option>
+            <option value="PHP">Unidad PHP</option>
+            <option value="CSS">Unidad CSS</option>
+            <option value="INTRO">Introducción al curso</option>
+        </select>
+        
+        <hr>
+        
+        <!-- <optgroup>: Permite agrupar opciones relacionadas dentro de un <select> bajo una categoría (label) -->
+        <select>    
+            <optgroup label="Bases de Datos">
+                <option value="Base1">Normalización</option>
+                <option value="Base2">DDL</option>
+            </optgroup>
+            <optgroup label="Programación">
+                <option value="Progra1">Programación I</option>
+                <option value="Progra2">Programación II</option>
+            </optgroup>
+            <optgroup label="Contabilidad">
+                <option value="Conta1">Contabilidad General</option>
+            </optgroup>
+        </select>
+        
+        <hr>
+        
+        <!-- <button type="button">: Botón personalizable que puede contener elementos HTML internos como imágenes o texto -->
+        <button type="button">  
+            <!-- <img>: Muestra una imagen; alt proporciona texto alternativo para accesibilidad -->
+            <img src="OK.png" alt="OK"/> 
+            <br/>
+            Aceptar!
+        </button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Create User ID</legend>
+      Domain: <input type="text" name="group" value="" />
+      <br />
+      Username: <input type="text" name="identity" value="" />
+    </fieldset>
+
+    <fieldset>
+      <legend>User Metadata</legend>
+      Department: <input type="text" name="dept" value="" />
+      <br />
+      Display Name: <input type="text" name="name" value="" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Require Admin Approval</legend>
+      <!-- <input type="radio">: Botón de opción circular excluyente (los que comparten el mismo 'name' solo permiten seleccionar uno) -->
+      <!-- checked: Marca la opción como seleccionada por defecto -->
+      Yes: <input type="radio" name="approval" value="true" checked="checked" />
+      <br />
+      No: <input type="radio" name="approval" value="false" />
+    </fieldset>
+
+    <!-- <input type="submit">: Botón estándar para procesar y enviar los datos del formulario -->
+    <input type="submit" value="Aceptar"/>
+</form>
+
+</body>
+</html>

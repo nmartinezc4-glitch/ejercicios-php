@@ -1,0 +1,298 @@
+:root {
+    --azul-noche: #0b1f3a;
+    --azul-tarjeta-borde: #1f3a63;
+    --dorado: #d9a94e;
+    --menta: #5fd3c4;
+    --hueso: #f7f4ee;
+    --texto-claro: #eef1f5;
+    --texto-tenue: #a9b4c4;
+    --texto-oscuro: #24303f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--hueso);
+    color: var(--texto-oscuro);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+}
+
+/* ===== HERO ===== */
+.hero {
+    position: relative;
+    background: radial-gradient(circle at 25% 20%, #163559 0%, var(--azul-noche) 55%, #081527 100%);
+    color: var(--texto-claro);
+    padding: 64px 24px 92px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.forma {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(6px);
+    opacity: 0.55;
+}
+
+.forma-1 {
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, var(--dorado) 0%, transparent 70%);
+    top: -140px;
+    right: -100px;
+}
+
+.forma-2 {
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, var(--menta) 0%, transparent 70%);
+    bottom: -120px;
+    left: -80px;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+    animation: aparecer 0.7s ease both;
+}
+
+.eyebrow {
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    color: var(--menta);
+    margin: 0 0 14px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.tagline {
+    color: var(--texto-tenue);
+    font-size: 1.02rem;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== MAIN / TARJETAS ===== */
+main {
+    max-width: 780px;
+    margin: -56px auto 0;
+    padding: 0 20px 60px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 36px;
+    box-shadow: 0 20px 50px rgba(11, 31, 58, 0.1);
+    position: relative;
+}
+
+.numero-seccion {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--azul-tarjeta-borde);
+    background: var(--hueso);
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.tarjeta h2 {
+    font-size: 1.5rem;
+    color: var(--azul-noche);
+    margin-bottom: 24px;
+}
+
+/* ===== DATOS PERSONALES ===== */
+.datos-contenedor {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.foto-carnet {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--dorado);
+    flex-shrink: 0;
+}
+
+.datos-tabla {
+    flex: 1;
+    min-width: 240px;
+}
+
+.dato {
+    margin: 0 0 14px;
+    line-height: 1.5;
+}
+
+.etiqueta {
+    display: inline-block;
+    width: 170px;
+    font-weight: 600;
+    color: var(--azul-noche);
+}
+
+.valor {
+    display: inline-block;
+    color: #45505f;
+}
+
+.valor a {
+    color: var(--dorado);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--dorado);
+}
+
+.valor a:hover {
+    color: var(--azul-noche);
+}
+
+/* ===== CURSOS Y CERTIFICACIONES ===== */
+.curso-nombre {
+    font-size: 1.1rem;
+    color: var(--azul-noche);
+    margin-bottom: 14px;
+}
+
+.curso-descripcion {
+    margin: 0 0 16px;
+    padding: 14px 20px;
+    border-left: 3px solid var(--dorado);
+    background: var(--hueso);
+    color: #4b5563;
+    font-style: italic;
+    line-height: 1.7;
+    border-radius: 0 10px 10px 0;
+}
+
+.curso-enlace {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #5a6472;
+}
+
+.curso-enlace a {
+    color: var(--dorado);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.curso-enlace a:hover {
+    text-decoration: underline;
+}
+
+/* ===== BIOGRAFÍA ===== */
+.biografia p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #45505f;
+    margin: 0 0 18px;
+}
+
+.biografia p:last-child {
+    margin-bottom: 0;
+}
+
+.biografia strong { color: var(--azul-noche); }
+.biografia em { color: var(--azul-noche); }
+.biografia u { text-decoration-color: var(--dorado); }
+
+/* ===== EJERCICIOS ===== */
+.ejercicios-sub {
+    color: #6b7684;
+    font-size: 0.92rem;
+    margin: -10px 0 22px;
+}
+
+.dias {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.dias a {
+    text-decoration: none;
+    color: #fff;
+    background: var(--azul-noche);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 26px;
+    border-radius: 999px;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.dias a:hover {
+    transform: translateY(-3px);
+    background: var(--dorado);
+    color: var(--azul-noche);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .hero {
+        padding: 52px 18px 80px;
+    }
+    main {
+        margin-top: -48px;
+    }
+    .tarjeta {
+        padding: 30px 22px;
+    }
+    .numero-seccion {
+        top: 20px;
+        right: 20px;
+    }
+    .datos-contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .etiqueta {
+        width: 140px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-contenido {
+        animation: none;
+    }
+}

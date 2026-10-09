@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación de caracteres estándar -->
+    <meta charset="UTF-8">
+    <!-- Viewport para compatibilidad con pantallas móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Néstor Joséph Martinez Cruz - Día 5 (Block vs Inline)</title>
+</head>
+<body>
+    <!-- Enlace de navegación para regresar a la página principal -->
+    <p><a href="../paginapersonal/index.html" style="display:inline-block;padding:10px 18px;background:#0b1f3a;color:#ffffff;text-decoration:none;border-radius:6px;font-family:Arial,sans-serif;font-weight:bold;">&larr; Volver a la página principal</a></p>
+    
+    <!-- ========================================================= -->
+    <!-- ELEMENTOS DE BLOQUE (BLOCK-LEVEL ELEMENTS):               -->
+    <!-- Ocupan todo el ancho disponible y siempre inician en una  -->
+    <!-- nueva línea (ejemplos: <div>, <p>, <h1>-<h6>, <section>). -->
+    <!-- ========================================================= -->
+    
+    <!-- <div>: Contenedor genérico en bloque con estilos en línea (fondo amarillo, padding y margen inferior) -->
+    <div style="background-color: yellow; padding: 10px; margin-bottom: 10px;"> 
+        DIV es un elemento de nivel de block (ocupa todo el ancho de la línea)
+        <!-- <p>: Párrafo también es un elemento de bloque, por lo que crea un salto de línea automático -->
+        <p>
+            P es un elemento de nivel de block
+        </p>
+        <p>
+            El texto es dibujado en una línea nueva
+        </p>
+    </div>
+
+    <!-- ========================================================= -->
+    <!-- ELEMENTOS EN LÍNEA (INLINE ELEMENTS):                     -->
+    <!-- Ocupan solo el espacio necesario de su contenido y NO     -->
+    <!-- fuerzan un salto de línea (ejemplos: <span>, <a>, <strong>)-->
+    <!-- ========================================================= -->
+    
+    <div style="background-color: skyblue; padding: 10px; margin-bottom: 10px;">
+        El texto es dibujado en una línea nueva
+        <!-- <span>: Contenedor genérico en línea; no corta la línea del texto circundante -->
+        <span>
+            SPAN es un elemento in-line que se dibuja en la misma línea
+        </span>
+    </div>
+
+    <!-- Bloques adicionales demostrando cómo los elementos <div> se apilan verticalmente -->
+    <div style="background-color: purple; color: white; padding: 10px; margin-bottom: 10px;">
+        Bloque adicional 1: Demostración de otro elemento de bloque
+    </div>
+
+    <div style="background-color: goldenrod; padding: 10px; margin-bottom: 10px;">
+        Bloque adicional 2: Contenedor con fondo diferente
+    </div>
+    
+    <!-- <hr>: Línea de separación temática -->
+    <hr>
+    
+    <!-- ========================================================= -->
+    <!-- COMPARACIÓN VISUAL: SPAN vs DIV                           -->
+    <!-- ========================================================= -->
+    
+    <!-- Dos <span> consecutivos se colocan uno al lado del otro en la misma línea horizontal -->
+    <span style="background-color: red; color: white;">This is the first line of text (SPAN)</span>
+    <span style="background-color: green; color: white;">This is the second line of text (SPAN)</span>
+    
+    <!-- Un <div> con ancho fijo (width: 800px) fuerza su propia línea porque es de bloque -->
+    <div style="background-color: red; color: white; width: 800px; margin-top: 10px;">This is the first line of text (DIV con width: 800px)</div>
+    
+    <span style="background-color: green; color: white;">This is the second line of text (SPAN después de un DIV)</span>
+</body>
+</html>
